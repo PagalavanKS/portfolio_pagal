@@ -1,0 +1,32 @@
+.poster-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.poster-container {
+  text-align: center;
+  margin: 10px;
+}
+
+.poster-image {
+  width: 200px; /* Fixed width for all images */
+  height: 300px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures aspect ratio is maintained */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Indicates the images are clickable */
+}
+
+.poster-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Styling for the full image in the modal */
+.full-image {
+  width: 100%; /* Makes the image occupy full width of the modal */
+  height: auto; /* Maintain aspect ratio */
+}
